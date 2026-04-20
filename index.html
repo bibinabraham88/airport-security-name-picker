@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport Security Name Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="app-header">
+        <h1>&#9992; Security Gate Name Picker</h1>
+    </header>
+
+    <div class="app-layout">
+
+        <!-- LEFT: Name Entry -->
+        <aside class="panel panel-left">
+            <h2>Participants</h2>
+            <textarea id="nameInput" placeholder="Enter names, one per line..."></textarea>
+            <button id="goBtn">&#9654; Start Race</button>
+        </aside>
+
+        <!-- CENTER: Simulation -->
+        <main class="panel panel-center">
+            <div class="simulation-area">
+                <div class="sim-label sim-label-top">&#8595;&nbsp; Queue Here &nbsp;&#8595;</div>
+
+                <div id="gates-container">
+                    <div class="gate">
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-body">
+                            <div class="gate-post"></div>
+                            <div class="gate-walkway"></div>
+                            <div class="gate-post"></div>
+                        </div>
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-label">Gate A</div>
+                    </div>
+                    <div class="gate">
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-body">
+                            <div class="gate-post"></div>
+                            <div class="gate-walkway"></div>
+                            <div class="gate-post"></div>
+                        </div>
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-label">Gate B</div>
+                    </div>
+                    <div class="gate">
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-body">
+                            <div class="gate-post"></div>
+                            <div class="gate-walkway"></div>
+                            <div class="gate-post"></div>
+                        </div>
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-label">Gate C</div>
+                    </div>
+                    <div class="gate">
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-body">
+                            <div class="gate-post"></div>
+                            <div class="gate-walkway"></div>
+                            <div class="gate-post"></div>
+                        </div>
+                        <div class="gate-scanner-bar"></div>
+                        <div class="gate-label">Gate D</div>
+                    </div>
+                </div>
+
+                <div class="sim-label sim-label-bottom">&#8595;&nbsp; Cleared Zone &nbsp;&#8595;</div>
+                <div id="people-container"></div>
+            </div>
+        </main>
+
+        <!-- RIGHT: Leaderboard -->
+        <aside class="panel panel-right">
+            <h2>&#127942; Leaderboard</h2>
+            <ol id="leaderboardList"></ol>
+        </aside>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
